@@ -12,6 +12,8 @@ Key Considerations
    The original µA741 IC uses lateral PNP transistors with high base‑emitter breakdown voltage (>30 V). The discrete substitute transistors (e.g., BCP53/BCL56) have a much lower maximum reverse voltage (typically ~5 V).
    Therefore, two Schottky diodes have been added in series with the input‑stage transistors to protect them from excessive differential input voltage.
    · For full authenticity, you may short the diode positions, but you must then ensure that the voltage difference between the two inputs never exceeds ±10 V, otherwise the input transistors may be damaged.
+4. Matching of Protection Diodes
+If the protection Schottky diodes (D1, D2) are installed for enhanced robustness, it is essential to select a matched pair with very similar forward voltage drops (Vf). A mismatch in the diode voltages will introduce an additional offset at the input stage, compromising the symmetry and DC operating point stability of the amplifier. For best results, measure and pair diodes from the same production lot.
 
 Mechanical Design
 
