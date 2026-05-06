@@ -1,0 +1,7 @@
+*.zip binary
+*.epro binary
+*.schdoc binary
+*.pcbdoc binary
+*.pdf binary
+*.xlsx binary
+*.step text eol=lf
